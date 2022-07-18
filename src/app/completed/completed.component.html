@@ -1,0 +1,23 @@
+<div class="tasks" >
+    <div  *ngFor="let task of taskArray" >
+       <div class="task" *ngIf="task.type === 'completed'">
+            <div class="taske">
+                <input #input type="checkbox" [id]=task.task checked  (change)="ischeck($event,task)">
+                <label  [for]=task.task  > 
+                {{task.task}} </label>
+            </div>
+            <span class="material-symbols-outlined" (click)="deleteTask(task)">
+                delete
+                </span>
+
+       </div>   
+
+    </div>
+    <button (click)="deleteAllTask()"><span class="material-symbols-outlined">
+        delete
+        </span>
+        delete all
+    </button>  
+         
+</div>
+

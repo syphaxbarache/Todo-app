@@ -1,0 +1,9 @@
+<form [formGroup]="takssForm">
+    <input #input type="text"  formControlName="task" placeholder="add details">
+    <button (click)="addTask(input.value)">Add</button>
+</form>
+<div class="tasks" *ngFor="let task of taskArray">
+    <input #input type="checkbox" [id]=task.task [checked]="task.type==='completed'" (change)="ischeck($event,task)">
+    <label  [for]=task.task [ngClass]="{completed:task.type==='completed'}" > 
+         {{task.task}} </label>
+</div>

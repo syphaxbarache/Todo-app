@@ -1,0 +1,69 @@
+form{
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 608px;
+    display: flex;
+    justify-content: space-between;
+}
+form input{
+    padding-left: 20px;
+    width: 476px;
+    height: 56px;
+    border: 1px solid #BDBDBD;
+    border-radius: 12px;
+
+}
+
+form input::placeholder{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    /* identical to box height */
+
+
+    /* Gray 3 */
+
+    color: #828282;
+}
+form button{
+    width: 109px;
+    height: 56px;
+    border: none;
+    background: #2F80ED;
+    box-shadow: 0px 2px 6px rgba(127, 177, 243, 0.4);
+    border-radius: 12px;
+}
+.tasks{
+    margin-top: 30px;
+    width: 608px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+}
+.tasks label {
+    margin-bottom: 22px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height */
+
+
+color: #000000;
+}
+.tasks label.completed{
+    text-decoration-line: line-through;
+}
+.tasks input{
+    margin-right: 7px;
+    width: 24px;
+    height: 24px;
+    /* Gray 3 */
+
+    border: 1px solid #828282;
+    border-radius: 4px;
+}
